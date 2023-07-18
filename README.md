@@ -1,6 +1,7 @@
 # Static Sites
 
 - All static sites that simply deploy with GitHub.
+- Please give this source a star, thank you so much 🥰.
 
 ## Screenshots
 
