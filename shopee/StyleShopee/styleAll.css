@@ -1,0 +1,65 @@
+*
+{
+    margin: auto;
+    font-family: Helvetica Neue,Helvetica,Arial;
+}
+#wrapper
+{
+    width: 100%;
+    height: auto;
+    background-color: rgb(245, 245, 245);
+    background-image: url('/Assignment_Lam_Them/HinhShopee/backgroundshopee1.png');
+    background-position: 0px 120px;
+    background-size: 100% 355px;
+    background-repeat: no-repeat;
+}
+#imgNone:hover
+{
+    box-shadow: none;
+}
+.fontChuLink
+{
+    font-family: Helvetica Neue,Helvetica,Arial;
+    color: white;
+    text-decoration: none;
+}
+.fontChuTitle
+{
+    color: grey;
+    font-family: Helvetica Neue,Helvetica,Arial;
+    padding: 20px 0px 0px 20px;
+}
+.fontChuFooter
+{
+    color: grey;
+    font-family: Helvetica Neue,Helvetica,Arial;
+    font-size: 12px;
+    line-height: 1.4;
+}
+button:hover
+{
+    opacity: 0.9;
+}
+
+    .a
+    {
+        background-color: none;
+    }
+    .b
+    {
+        background-color: none;
+    }
+    .c1 
+    {
+        background-color: none;
+    }
+    .c2 
+    {
+        background-color: none;
+    }
+    .d
+    {
+        background-color: none;
+    }
+
+        

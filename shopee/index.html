@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ps18817_TranCaoMinh_Assignment_Shopee_LamThem</title>
+    <link href="StyleShopee/styleAll.css" rel="stylesheet">
+    <link href="StyleShopee/styleHeader.css" rel="stylesheet">
+    <link href="StyleShopee/styleArticle.css" rel="stylesheet">
+    <link href="StyleShopee/styleFooter.css" rel="stylesheet">
+</head>
+<body>
+    <div id="wrapper">
+
+        <header >
+            <div class="inHeader">
+                <!-- nav ben trai-->
+                <div class="inHeader__menu-trai-tren">    
+                    <div class="inHeader__menu-nav">
+                        <a class="styleNav_Trai-Tren" href="#">Kênh Người Bán</a> | 
+                    </div>
+                    <div class="inHeader__menu-nav">
+                        <a class="styleNav_Trai-Tren" href="#">Tải ứng dụng</a> | 
+                    </div>
+                    <div class="inHeader__menu-nav">
+                        <a class="styleNav_Trai-Tren" href="#">Kết nối</a> 
+                    </div>                             
+                </div>
+                <!-- nav ben phai-->
+                <div class="inHeader__menu-phai-tren">
+                    <div class="inHeader__menu-nav">
+                        <a class="styleNav_Phai-Tren " href="#">Thông Báo</a> 
+                    </div>
+                    <div class="inHeader__menu-nav">
+                        <a class="styleNav_Phai-Tren" href="b_troGiup.html">Trợ Giúp</a>  
+                    </div>
+                    <div class="inHeader__menu-nav">
+                        <a class="styleNav_Phai-Tren" href="b_dangKy.html">Đăng Ký</a>  |
+                    </div>   
+                    <div class="inHeader__menu-nav">
+                        <a class="styleNav_Phai-Tren" href="b_dangNhap.html">Đăng Nhập</a>  
+                    </div> 
+                </div>
+                <!-- hop tim kiem-->
+                <form>
+                    <div class="inHeader__searchBox">
+                        <form>
+                            <input type="text" placeholder="Tết sale 27.1"
+                                   class="inHeader__searchBox-input"/>
+                        </form>
+                        <button class="inHeader__searchBox-button">
+                            <!-- vung chua icon tim kiem-->  
+                            <img src="HinhShopee/HinhHeader/timKiemShopee.png" 
+                                 width="18px" height="18px" style="float: center  center;" />                 
+                        </button>
+                    </div>
+                </form>
+
+                <!-- icon 2 ben -->
+                <!-- icon  shopee-->
+                <div class="inHeader__container-logoShopee">
+                    <a href="">    
+                        <img class="inHeader__logoShopee"
+                            src="HinhShopee/HinhHeader/logoShopeeWhite.png" />
+                    </a>
+                </div>
+                <!-- icon  gio hang-->
+                <div class="inHeader__container-iconGioHang">
+                    <a href="#">
+                        <img class=""
+                            src="HinhShopee/HinhHeader/gioHangShopee.png" 
+                            style="width: 33.75px; height: 34.5px;" />
+                    </a>
+                </div>
+     
+                <!-- nav ben duoi-->
+                <div class="inHeader__menu-giua-duoi">
+                    <div class="inHeader__menu-nav">
+                        <a class="styleNav_Giua-Duoi" href="c_chiTietSanPham.html">Hoodie Nam</a> 
+                    </div>
+                    <div class="inHeader__menu-nav">
+                        <a class="styleNav_Giua-Duoi" href="#">Sandal Nữ</a>  
+                    </div>
+                    <div class="inHeader__menu-nav">
+                        <a class="styleNav_Giua-Duoi" href="#">Áo Nữ</a> 
+                    </div>
+                    <div class="inHeader__menu-nav">
+                        <a class="styleNav_Giua-Duoi" href="#">Dép Nam</a>  
+                    </div>
+                    <div class="inHeader__menu-nav">
+                        <a class="styleNav_Giua-Duoi" href="#">Balo Nữ</a> 
+                    </div>
+                    <div class="inHeader__menu-nav">
+                        <a class="styleNav_Giua-Duoi" href="#">Quần Nam</a>  
+                    </div>
+                    <div class="inHeader__menu-nav">
+                        <a class="styleNav_Giua-Duoi" href="#">Tất Nữ</a> 
+                    </div>
+                    <div class="inHeader__menu-nav">
+                        <a class="styleNav_Giua-Duoi" href="#">Váy Trắng</a>  
+                    </div>
+                </div>  
+
+                <!-- Thu gon menu cho tablet,mobile bang navigation bar --> 
+                <!-- Thanh nav -->
+                <label for="navMenuInput" class="nav-bars"> <!-- gian tiep nhap vao checkbox id-->
+                    <svg aria-hidden="true" focusable="false" 
+                        data-prefix="fas" data-icon="bars" 
+                        class="svg-inline--fa fa-bars fa-w-14" role="img" 
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path fill="currentColor" 
+                        d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
+                        </path>
+                    </svg>
+                </label>
+                <!-- dung check box cho viec an hien menu qua viec nhan nut-->
+                <input type="checkbox" id="navMenuInput" class="nav-menu-input"
+                    style="display: none;">
+                <!-- bao phu khi hien menu-->
+                <label for="navMenuInput" class="overlay"></label>
+                <!-- menu trong nav-->
+                <nav class="nav">
+                    <img src="HinhShopee/HinhHeader/logoShopeeOrange.png">
+                    <label for="navMenuInput" class="nav-close"> <!-- Nut X trong nav -->
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" 
+                            data-icon="times" class="svg-inline--fa fa-times fa-w-11" 
+                            role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512">
+                            <path fill="currentColor" 
+                                d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z">
+                            </path>
+                        </svg>
+                    </label>
+                    <ul class="nav-list"> <!-- Tao danh sach menu trong nav -->
+                        <li>
+                            <a class="styleNav-list" href="index.html">Trang Chủ</a> 
+                        </li>
+                        <li>
+                            <a class="styleNav-list" href="b_dangNhap.html">Đăng Nhập</a>   
+                        </li>
+                        <li>
+                            <a class="styleNav-list" href="b_troGiup.html">Trợ Giúp</a> 
+                        </li>
+                        <li>
+                            <a class="styleNav-list" href="#">Thông Báo</a>   
+                        </li>
+                        <li>
+                            <a class="styleNav-list" href="#">Kênh Người Bán</a> 
+                        </li>
+                        <li>
+                            <a class="styleNav-list" href="#">Tải Ứng Dụng</a>   
+                        </li>
+                        <li>
+                            <a class="styleNav-list" href="#">Kết Nối</a> 
+                        </li>
+                        <li>
+                            <a class="styleNav-list" href="#">Giỏ Hàng Của Bạn</a>   
+                        </li>
+                    </ul>
+                </nav>
+
+
+            </div>
+        <!-- cao 120px dai 100% -->
+        </header>
+
+
+
+        <article>
+            <!-- 
+                <a href="#"><img src="HinhShopee/nongTraiShopee.png" class="hoverNone" 
+            style="position: fixed; top: 570px; right: 51px; width: 82px; z-index: 3;" /></a>-->
+            
+            <!-- Khoi 1-->
+            <div class="khoi1">
+                <a href="#">
+                    <div class="banner1a"></div>
+                </a>
+                <a href="#">
+                    <div class="banner1b"></div>
+                </a>
+                <a href="#">
+                    <div class="banner1c"></div>
+                </a> 
+            </div>         
+            <!-- cao 235px dai 1200px  cao tong 235px-->
+
+            <!-- Khoi 2-->
+            <div class="khoi2">
+                <a href="#">
+                    <div class="items2">     
+                        <img src="HinhShopee/HinhArticle/article2/khungGioSanSale.gif" />
+                        <div class="chuItems2">Khung Giờ Săn Sale</div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="items2">     
+                        <img src="HinhShopee/HinhArticle/article2/hangQuocTe.png" />
+                        <div class="chuItems2">Hàng Quốc Tế</div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="items2">     
+                        <img src="HinhShopee/HinhArticle/article2/freeShipXtra.png" />
+                        <div class="chuItems2">Freeship Xtra</div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="items2">     
+                        <img src="HinhShopee/HinhArticle/article2/uuDaiThanhVien.png" />
+                        <div class="chuItems2">Ưu Đãi Thành Viên - Tới 50%</div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="items2">     
+                        <img src="HinhShopee/HinhArticle/article2/hoanXuDonBatKy.png" />
+                        <div class="chuItems2">Hoàn Xu Đơn Bất Kỳ</div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="items2">     
+                        <img src="HinhShopee/HinhArticle/article2/shopeePrenium.png" />
+                        <div class="chuItems2">Shopee Premium</div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="items2">     
+                        <img src="HinhShopee/HinhArticle/article2/brandDiscount.png" />
+                        <div class="chuItems2">Brand Discount</div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="items2">     
+                        <img src="HinhShopee/HinhArticle/article2/techZoneSieuThiDienTu.png" />
+                        <div class="chuItems2">Tech Zone</div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="items2">     
+                        <img src="HinhShopee/HinhArticle/article2/sanSieuSale.png" />
+                        <div class="chuItems2">Săn Siêu Sale</div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="items2">     
+                        <img src="HinhShopee/HinhArticle/article2/dealSocTu1k.png" />
+                        <div class="chuItems2">Deal Sốc Từ 1k</div>
+                    </div>
+                </a>
+            </div>
+            <!-- cao 110px dai 1200px  cao tong 355px tinh ca margin-->
+            
+            <!-- Khoi 3-->      
+            <a href="#">
+                <div class="banner3"></div>
+            </a>
+            <!-- cao 110px dai 1200px  cao tong 482px tinh ca margin-->
+
+            <!-- Khoi 4-->
+            <div class="khoi4">
+                <div class="itemTitle4">
+                    DANH MỤC
+                    <div class="xemThem-NotPc4">
+                        Xem Thêm >
+                    </div>
+                </div>
+                <div class="containItems4">
+                    <div class="taoThanhTruot-forNotPc-items4">
+                        <!-- 10 danh muc con 1-->
+                        <a href="#">
+                            <div class="items4">
+                                <img src="HinhShopee/HinhArticle/article4/hang1/thoiTrangNam.png" />
+                                <div class="chuItems4">Thời Trang Nam</div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="items4">
+                                <img src="HinhShopee/HinhArticle/article4/hang1/dienThoaiPhuKien.png" />
+                                <div class="chuItems4">Điện Thoại & Phụ Kiện</div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="items4">
+                                <img src="HinhShopee/HinhArticle/article4/hang1/thietBiDienTu.png" />
+                                <div class="chuItems4">Thiết Bị Điện Tử</div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="items4">
+                                <img src="HinhShopee/HinhArticle/article4/hang1/mayTinhLaptop.png" />
+                                <div class="chuItems4">Máy tính & Laptop</div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="items4">
+                                <img src="HinhShopee/HinhArticle/article4/hang1/mayAnhMayQuayPhim.png" />
+                                <div class="chuItems4">Máy ảnh - Máy quay phim</div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="items4">
+                                <img src="HinhShopee/HinhArticle/article4/hang1/dongHo.png" />
+                                <div class="chuItems4">Đồng Hồ</div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="items4">
+                                <img src="HinhShopee/HinhArticle/article4/hang1/giayDepNam.png" />
+                                <div class="chuItems4">Giày Dép Nam</div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="items4">
+                                <img src="HinhShopee/HinhArticle/article4/hang1/thietBiDienGiaDung.png" />
+                                <div class="chuItems4">Thiết Bị Điện Gia Dụng</div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="items4">
+                                <img src="HinhShopee/HinhArticle/article4/hang1/theThaoDuLich.png" />
+                                <div class="chuItems4">Thể Thao & Du Lịch</div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="items4">
+                                <img src="HinhShopee/HinhArticle/article4/hang1/oToXeMayXeDap.png" />
+                                <div class="chuItems4">Ô tô - xe máy - xe đạp</div>
+                            </div>
+                        </a>
+                        <!-- 10 danh muc con 2-->
+                        <a href="#">
+                            <div class="items4">
+                                <img src="HinhShopee/HinhArticle/article4/hang2/thoiTrangNu.png" />
+                                <div class="chuItems4">Thời Trang Nữ</div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="items4">
+                                <img src="HinhShopee/HinhArticle/article4/hang2/meBe.png" />
+                                <div class="chuItems4">Mẹ & Bé</div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="items4">
+                                <img src="HinhShopee/HinhArticle/article4/hang2/nhaCuaDoiSong.png" />
+                                <div class="chuItems4">Nhà Cửa & Đời Sống</div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="items4">
+                                <img src="HinhShopee/HinhArticle/article4/hang2/sucKhoeSacDep.png" />
+                                <div class="chuItems4">Sức Khỏe & Sắc Đẹp</div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="items4">
+                                <img src="HinhShopee/HinhArticle/article4/hang2/giayDepNu.png" />
+                                <div class="chuItems4">Giày Dép Nữ</div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="items4">
+                                <img src="HinhShopee/HinhArticle/article4/hang2/tuiVi.png" />
+                                <div class="chuItems4">Túi Ví</div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="items4">
+                                <img src="HinhShopee/HinhArticle/article4/hang2/phuKienThoiTrang.png" />
+                                <div class="chuItems4">Phụ Kiện Thời Trang</div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="items4">
+                                <img src="HinhShopee/HinhArticle/article4/hang2/bachHoaOnline.png" />
+                                <div class="chuItems4">Bách Hóa Online</div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="items4">
+                                <img src="HinhShopee/HinhArticle/article4/hang2/voucherDichVu.png" />
+                                <div class="chuItems4">Voucher & Dịch vụ</div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="items4">
+                                <img src="HinhShopee/HinhArticle/article4/hang2/nhaSachOnline.png" />
+                                <div class="chuItems4">Nhà Sách Online</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>   
+            </div>
+            <!-- cao 361px dai 1200px  cao tong 1370px tinh ca margin-->
+
+            <!-- Khoi 10-->
+            <div class="khoi10"> <!-- height: 2350px-->   
+                <div class="containTitles10">
+                    <div class="title10">GỢI Ý HÔM NAY</div>
+                    <div class="xemThem-NotPc10">
+                        Xem Thêm >
+                    </div>
+                    <!-- HINH TET SALE DANG PHAT TRIEN-->
+                </div>
+                <div class="wrap_containsItems10">
+                    <div class="taoThanhTruot-forNotPc-items10">
+                        <!-- 6 mat hang 1--> <!-- moi mat hang cao 294px tinh ca margin-->
+                        <a href="c_chiTietSanPham.html">
+                            <div class="containItems10">
+                                <div class="items10">
+                                    <div class="hinhItems10" style="background-image: url(HinhShopee/HinhSanPham/hoodieNam/1.jfif);">                      
+                                        <div class="hinhItems10" style="background-image: url(HinhShopee/HinhArticle/article10/tetFreeShipXtra.png);">                      
+                                        </div>
+                                    </div>
+                                    <div class="thongTinItems10">
+                                        <div class="chuItems10">Chân váy nữ chất liệu voan 2</div> 
+                                        <div class="giaItems10"><u><sup>đ</sup></u>2.490</div>
+                                        <div class="daBanItems10">Đã bán 1,3k</div>
+                                    </div>
+                                    <div class="timSanPhamTuongTu">Tìm sản phẩm tương tự</div>         
+                                </div>
+                            </div>
+                        </a>
+                        
+                        <div class="containItems10">
+                            <div class="items10">
+                                <div class="hinhItems10" style="background-image: url(HinhShopee/HinhSanPham/hoodieNam/2.jfif);">                      
+                                    <img src="HinhShopee/HinhArticle/article10/tetFreeShipXtra.png" class="quangCaoBenDuoiPhiaTraiHinhItems10"/>
+                                </div>
+                                <div class="thongTinItems10">
+                                    <div class="chuItems10">Chân váy nữ chất liệu voan 2</div> 
+                                    <div class="giaItems10"><u><sup>đ</sup></u>2.490</div>
+                                    <div class="daBanItems10">Đã bán 1,3k</div>
+                                </div>
+                                <div class="timSanPhamTuongTu">Tìm sản phẩm tương tự</div>         
+                            </div>
+                        </div>
+                        <div class="containItems10">
+                            <div class="items10">
+                                <div class="hinhItems10" style="background-image: url(HinhShopee/HinhSanPham/hoodieNam/3.jfif);">                      
+                                    <img src="HinhShopee/HinhArticle/article10/tetFreeShipXtra.png" class="quangCaoBenDuoiPhiaTraiHinhItems10"/>
+                                </div>
+                                <div class="thongTinItems10">
+                                    <div class="chuItems10">Chân váy nữ chất liệu voan 2</div> 
+                                    <div class="giaItems10"><u><sup>đ</sup></u>2.490</div>
+                                    <div class="daBanItems10">Đã bán 1,3k</div>
+                                </div>
+                                <div class="timSanPhamTuongTu">Tìm sản phẩm tương tự</div>         
+                            </div>
+                        </div>
+                        <div class="containItems10">
+                            <div class="items10">
+                                <div class="hinhItems10" style="background-image: url(HinhShopee/HinhSanPham/hoodieNam/4.jfif);">                      
+                                    <img src="HinhShopee/HinhArticle/article10/tetFreeShipXtra.png" class="quangCaoBenDuoiPhiaTraiHinhItems10"/>
+                                </div>
+                                <div class="thongTinItems10">
+                                    <div class="chuItems10">Chân váy nữ chất liệu voan 2</div> 
+                                    <div class="giaItems10"><u><sup>đ</sup></u>2.490</div>
+                                    <div class="daBanItems10">Đã bán 1,3k</div>
+                                </div>
+                                <div class="timSanPhamTuongTu">Tìm sản phẩm tương tự</div>         
+                            </div>
+                        </div>
+                        <div class="containItems10">
+                            <div class="items10">
+                                <div class="hinhItems10" style="background-image: url(HinhShopee/HinhSanPham/hoodieNam/5.jfif);">                      
+                                    <img src="HinhShopee/HinhArticle/article10/tetFreeShipXtra.png" class="quangCaoBenDuoiPhiaTraiHinhItems10"/>
+                                </div>
+                                <div class="thongTinItems10">
+                                    <div class="chuItems10">Chân váy nữ chất liệu voan 2</div> 
+                                    <div class="giaItems10"><u><sup>đ</sup></u>2.490</div>
+                                    <div class="daBanItems10">Đã bán 1,3k</div>
+                                </div>
+                                <div class="timSanPhamTuongTu">Tìm sản phẩm tương tự</div>         
+                            </div>
+                        </div>
+                        <div class="containItems10">
+                            <div class="items10">
+                                <div class="hinhItems10" style="background-image: url(HinhShopee/HinhSanPham/hoodieNam/6.jfif);">                      
+                                    <img src="HinhShopee/HinhArticle/article10/tetFreeShipXtra.png" class="quangCaoBenDuoiPhiaTraiHinhItems10"/>
+                                </div>
+                                <div class="thongTinItems10">
+                                    <div class="chuItems10">Chân váy nữ chất liệu voan 2</div> 
+                                    <div class="giaItems10"><u><sup>đ</sup></u>2.490</div>
+                                    <div class="daBanItems10">Đã bán 1,3k</div>
+                                </div>
+                                <div class="timSanPhamTuongTu">Tìm sản phẩm tương tự</div>         
+                            </div>
+                        </div>
+                        <!-- 6 mat hang 2-->
+                        <div class="containItems10">
+                            <div class="items10">
+                                <div class="hinhItems10" style="background-image: url(HinhShopee/HinhSanPham/hoodieNam/7.jfif);">                      
+                                    <img src="HinhShopee/HinhArticle/article10/tetFreeShipXtra.png" class="quangCaoBenDuoiPhiaTraiHinhItems10"/>
+                                </div>
+                                <div class="thongTinItems10">
+                                    <div class="chuItems10">Chân váy nữ chất liệu voan 2</div> 
+                                    <div class="giaItems10"><u><sup>đ</sup></u>2.490</div>
+                                    <div class="daBanItems10">Đã bán 1,3k</div>
+                                </div>
+                                <div class="timSanPhamTuongTu">Tìm sản phẩm tương tự</div>         
+                            </div>
+                        </div>
+                        <div class="containItems10">
+                            <div class="items10">
+                                <div class="hinhItems10" style="background-image: url(HinhShopee/HinhSanPham/hoodieNam/8.jfif);">                      
+                                    <img src="HinhShopee/HinhArticle/article10/tetFreeShipXtra.png" class="quangCaoBenDuoiPhiaTraiHinhItems10"/>
+                                </div>
+                                <div class="thongTinItems10">
+                                    <div class="chuItems10">Chân váy nữ chất liệu voan 2</div> 
+                                    <div class="giaItems10"><u><sup>đ</sup></u>2.490</div>
+                                    <div class="daBanItems10">Đã bán 1,3k</div>
+                                </div>
+                                <div class="timSanPhamTuongTu">Tìm sản phẩm tương tự</div>         
+                            </div>
+                        </div>
+                        <div class="containItems10">
+                            <div class="items10">
+                                <div class="hinhItems10" style="background-image: url(HinhShopee/HinhSanPham/hoodieNam/9.jfif);">                      
+                                    <img src="HinhShopee/HinhArticle/article10/tetFreeShipXtra.png" class="quangCaoBenDuoiPhiaTraiHinhItems10"/>
+                                </div>
+                                <div class="thongTinItems10">
+                                    <div class="chuItems10">Chân váy nữ chất liệu voan 2</div> 
+                                    <div class="giaItems10"><u><sup>đ</sup></u>2.490</div>
+                                    <div class="daBanItems10">Đã bán 1,3k</div>
+                                </div>
+                                <div class="timSanPhamTuongTu">Tìm sản phẩm tương tự</div>         
+                            </div>
+                        </div>
+                        <div class="containItems10">
+                            <div class="items10">
+                                <div class="hinhItems10" style="background-image: url(HinhShopee/HinhSanPham/hoodieNam/10.jfif);">                      
+                                    <img src="HinhShopee/HinhArticle/article10/tetFreeShipXtra.png" class="quangCaoBenDuoiPhiaTraiHinhItems10"/>
+                                </div>
+                                <div class="thongTinItems10">
+                                    <div class="chuItems10">Chân váy nữ chất liệu voan 2</div> 
+                                    <div class="giaItems10"><u><sup>đ</sup></u>2.490</div>
+                                    <div class="daBanItems10">Đã bán 1,3k</div>
+                                </div>
+                                <div class="timSanPhamTuongTu">Tìm sản phẩm tương tự</div>         
+                            </div>
+                        </div>
+                        <div class="containItems10 displayNone_1024-1199">
+                            <div class="items10">
+                                <div class="hinhItems10" style="background-image: url(HinhShopee/HinhSanPham/hoodieNam/11.jfif);">                      
+                                    <img src="HinhShopee/HinhArticle/article10/tetFreeShipXtra.png" class="quangCaoBenDuoiPhiaTraiHinhItems10"/>
+                                </div>
+                                <div class="thongTinItems10">
+                                    <div class="chuItems10">Chân váy nữ chất liệu voan 2</div> 
+                                    <div class="giaItems10"><u><sup>đ</sup></u>2.490</div>
+                                    <div class="daBanItems10">Đã bán 1,3k</div>
+                                </div>
+                                <div class="timSanPhamTuongTu">Tìm sản phẩm tương tự</div>         
+                            </div>
+                        </div>
+                        <div class="containItems10 displayNone_1024-1199">
+                            <div class="items10">
+                                <div class="hinhItems10" style="background-image: url(HinhShopee/HinhSanPham/hoodieNam/12.jfif);">                      
+                                    <img src="HinhShopee/HinhArticle/article10/tetFreeShipXtra.png" class="quangCaoBenDuoiPhiaTraiHinhItems10"/>
+                                </div>
+                                <div class="thongTinItems10">
+                                    <div class="chuItems10">Chân váy nữ chất liệu voan 2</div> 
+                                    <div class="giaItems10"><u><sup>đ</sup></u>2.490</div>
+                                    <div class="daBanItems10">Đã bán 1,3k</div>
+                                </div>
+                                <div class="timSanPhamTuongTu">Tìm sản phẩm tương tự</div>         
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--
+                !-- 6 mat hang 3--
+                
+                !-- 6 mat hang 4--
+                
+                !-- 6 mat hang 5--
+                
+                !-- 6 mat hang 6--
+                
+                !-- 6 mat hang 7--
+                
+                !-- 6 mat hang 8--
+                
+                -->
+                <!-- nut xem them-->
+                <div class="contain_nutXemThem10">
+                    <div class="nutXemThem10">Xem Thêm</div>
+                </div>         
+            </div>
+            <!-- cao ?px dai 1200px  cao tong 2976+?px tinh ca margin-->
+        
+        </article>
+
+
+
+        <footer>
+            <div style="width: 100%; height: fit-content; background-color: white;">
+                <div class="footer1">
+                
+                    <h3>SHOPEE - MUA SẮM VÀ BÁN HÀNG ONLINE ĐƠN GIẢN, NHANH CHÓNG VÀ AN TOÀN</h3> <br>
+                    Nếu bạn đang tìm kiếm một trang web để mua và bán hàng trực tuyến thì Shopee.vn là một sự lựa chọn hiệu quả dành cho bạn. Bản chất của Shopee là một social ecommerce platform - nền tảng trang web thương mại điện 
+                    tử tích hợp mạng xã hội. Điều này cho phép người mua và người bán hàng dễ dàng tương tác, trao đổi thông tin về sản phẩm và chương trình khuyến mãi của shop. Nhờ nền tảng đó, việc mua bán trên Shopee trở nên nhanh
+                    chóng và đơn giản hơn. Bạn có thể trò chuyện trực tiếp với nhà bán hàng để hỏi trực tiếp về mặt hàng cần mua. Còn nếu bạn muốn tìm mua những dòng sản phẩm chính hãng, uy tín, Shopee Mall chính là sự lựa chọn lí 
+                    tưởng dành cho bạn. Đến với Shopee, cơ hội để trở thành một nhà bán hàng dễ dàng hơn bao giờ hết. Chỉ với vài thao tác trên ứng dụng, bạn đã có thể đăng bán ngay những sản phẩm của mình. Không những thế, các nhà 
+                    bán hàng có thể tùy chọn các tính năng “Shop tạm nghỉ” hoặc tự tạo riêng cho mình một chương trình khuyến mãi để thu hút người mua với những sản phẩm có mức giá hấp dẫn. Khi đăng nhập tại Shopee Kênh người bán, 
+                    bạn có thể dễ dàng phân loại sản phẩm, theo dõi đơn hàng, chăm sóc khách hàng và cập nhập ngay các hoạt động của shop. <br><br>
+        
+        
+                    <h3>TẢI ỨNG DỤNG SHOPEE NGAY ĐỂ MUA BÁN ONLINE MỌI LÚC, MỌI NƠI </h3><br>
+                    Ưu điểm của ứng dụng Shopee là cho phép bạn mua và bán hàng mọi lúc, mọi nơi. Bạn có thể tải ứng dụng Shopee cũng như đăng sản phẩm bán hàng một cách nhanh chóng và tiện lợi. Ngoài ra, ứng dụng Shopee còn có 
+                    những ưu điểm sau: - Giao diện thân thiện, đơn giản, dễ sử dụng. Bạn sẽ dễ dàng thấy được ngay những sản phẩm nổi bật cũng như dễ dàng tìm đến các ô tìm kiếm, giỏ hàng hoặc tính năng chat liền tay. - Ứng dụng tích 
+                    hợp công nghệ quản lý đơn mua và bán hàng tiện lợi trên cùng một tài khoản. Bạn sẽ vừa là người mua hàng, vừa là người bán hàng rất linh hoạt, dễ dàng. - Cập nhập thông tin khuyến mãi, Shopee flash sale nhanh chóng 
+                    và liên tục. Tại Shopee, bạn có thể lấy các mã khuyến mãi, mã giảm giá Shopee và mã miễn phí vận chuyển toàn quốc. Bên cạnh đó, Shopee cũng sẽ có những chiến dịch khuyến mãi lớn hằng năm như Shopee 9.9 sale, 
+                    Shopee 10.10 sale, Shopee 11.11 sale, Shopee 12.12 sale, Shopee Tết Sale. Đây là thời điểm để người mua hàng có thể nhanh tay chọn ngay cho mình những mặt hàng ưa thích với mức giá giảm kỉ lục. <br><br>
+        
+        
+                    <h3>MUA HÀNG CHÍNH HÃNG TỪ CÁC THƯƠNG HIỆU LỚN VỚI SHOPEE </h3><br>
+                    Mua hàng trên Shopee luôn là một trải nghiệm ấn tượng. Dù bạn đang có nhu cầu mua bất kỳ mặt hàng thời trang nam, thời trang nữ, đồng hồ, điện thoại, nước rửa tay khô hay khẩu trang N95 thì Shopee cũng sẽ đảm bảo 
+                    cung cấp cho bạn những sản phẩm ưng ý. Bên cạnh đó, Shopee cũng có sự tham gia của các thương hiệu hàng đầu thế giới ở đa dạng nhiều lĩnh vực khác nhau. Trong đó có thể kể đến Samsung, OPPO, Xiaomi, Innisfree,  
+                    Unilever, P&G, Biti’s,...Các thương hiệu này hiện cũng đã có cửa hàng chính thức trên Shopee Mall với hàng trăm mặt hàng chính hãng, được cập nhập liên tục. Là một kênh bán hàng uy tín, Shopee luôn cam kết mang lại  
+                    cho khách hàng những trải nghiệm mua sắm online giá rẻ, an toàn và tin cậy. Mọi thông tin về người bán và người mua đều được bảo mật tuyệt đối. Các hoạt động giao dịch thanh toán tại Shopee luôn được đảm bảo diễn ra  
+                    nhanh chóng, an toàn. Một vấn đề nữa khiến cho các khách hàng luôn quan tâm đó chính là mua hàng trên Shopee có đảm bảo không. Shopee luôn cam kết mọi sản phẩm trên Shopee, đặc biệt là Shopee Mall đều là những  
+                    sản phẩm chính hãng, đầy đủ tem nhãn, bảo hành từ nhà bán hàng. Ngoài ra, Shopee bảo vệ người mua và người bán bằng cách giữ số tiền giao dịch đến khi người mua xác nhận đồng ý với đơn hàng và không có yêu cầu  
+                    khiếu nại, trả hàng hay hoàn tiền nào. Thanh toán sau đó sẽ được chuyển đến cho người bán. Đến với Shopee ngay hôm nay để mua hàng online giá rẻ và trải nghiệm dịch vụ chăm sóc khách hàng tuyệt vời tại đây. Đặc biệt
+                    khi mua sắm trên Shopee Mall, bạn sẽ được miễn phí vận chuyển, giao hàng tận nơi và 7 ngày miễn phí trả hàng. Ngoài ra, khách hàng có thể sử dụng Shopee Xu để đổi lấy mã giảm giá có giá trị cao và voucher dịch vụ hấp  
+                    dẫn. Tiếp đến là Shopee Mum's Club với các ưu đãi độc quyền từ các thương hiệu lớn như Enfa; Friso; Pampers...cho các mẹ bỉm sữa đăng ký làm thành viên. Hãy truy cập ngay Shopee.vn hoặc tải ngay ứng dụng Shopee  
+                    về điện thoại ngay hôm nay! 
+                    <br><br><br><br><br>
+                    <hr>              
+                </div>
+            </div>
+            
+            
+            <div class="footer3">
+                <div class="contain-navFooter3">
+                    <div class="thichUngNotPc-navFooter3">
+                        <div class="navFooter3">
+                            <a href="d_chinhSachBaoMat.html">CHÍNH SÁCH BẢO MẬT</a>
+                        </div>
+                    </div>
+                    <div class="thichUngNotPc-navFooter3">
+                        <div class="navFooter3">
+                            <a href="d_quyCheHoatDong.html">QUY CHẾ HOẠT ĐỘNG</a>
+                        </div>
+                    </div>
+                    <div class="thichUngNotPc-navFooter3">
+                        <div class="navFooter3">
+                            <a href="d_chinhSachVanChuyen.html">CHÍNH SÁCH VẬN CHUYỂN</a>
+                        </div>
+                    </div>
+                    <div class="thichUngNotPc-navFooter3">
+                        <div class="navFooter3" style="border-right: none;">
+                            <a href="d_traHangHoanTien.html">CHÍNH SÁCH TRẢ HÀNG VÀ HOÀN TIỀN</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="divTheoHangFooter3">
+                    <div class="imageFooter3">
+                        <img src="HinhShopee/HinhFooter/footer3/boCongThuong.png" class="imageFooter3-boCongThuong"/>
+                    </div>
+                    <div class="imageFooter3">
+                        <img src="HinhShopee/HinhFooter/footer3/boCongThuong.png" class="imageFooter3-boCongThuong"/>
+                    </div>
+                    <div class="imageFooter3">
+                        <img src="HinhShopee/HinhFooter/footer3/vanTay.png" class="imageFooter3-vanTay"/>
+                    </div>
+                </div>
+
+                <div class="containCongTyTNHH-Shopee">
+                    <a href="e_congTyShopee.html" style="text-decoration: none;">
+                        <p style="color: rgb(238, 77, 45);">Công ty TNHH Shopee</p>
+                    </a>  
+                </div>
+                <div class="divTheoHangFooter3" style="margin-top: 20px;">
+                    <p>Địa chỉ: Tầng 28, Tòa nhà trung tâm Lotte Hà Nội, 54 Liễu Giai, phường Cống Vị, Quận Ba Đình, Hà Nội.</p>
+                </div>
+                <div class="divTheoHangFooter3" style="margin-top: 10px;">
+                    <p>Tổng đài hỗ trợ: 19001221 - Email: cskh@hotro.shopee.vn</p>
+                </div>
+                <div class="divTheoHangFooter3" style="margin-top: 10px;">
+                    <p>Mã số doanh nghiệp: 0106773786 do Sở Kế hoạch & Đầu tư TP Hà Nội cấp lần đầu ngày 10/02/2015</p>
+                </div>
+                <div class="divTheoHangFooter3" style="margin-top: 10px;">
+                    <p>© 2015 - Bản quyền thuộc về Công ty TNHH Shopee</p>
+                </div>              
+            </div>
+        </footer>
+    
+    </div>
+    
+</body>
+</html>

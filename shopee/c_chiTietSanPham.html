@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ps18817_TranCaoMinh_Assignment_Shopee_LamThem</title>
+    <link href="StyleShopee/styleAll.css" rel="stylesheet"> 
+    <link href="StyleShopee/styleHeader.css" rel="stylesheet"> 
+    <link href="StyleShopee/styleArticle.css" rel="stylesheet">
+    <link href="StyleShopee/styleFooter.css" rel="stylesheet">
+    <style>
+        .img450
+        {
+            width: 450px;
+            height: 450px;
+        }
+        .img82
+        {
+            width: 82px;
+            height: 82px;
+            float: left;
+            margin-right: 10px;
+            background-size: cover;
+        }
+            .img82:hover .borderAn
+            {
+                display: block !important;
+            }
+        .circle25
+        {
+            height: 25px; 
+            width: 25px;  
+            border-radius: 25px; 
+            float: left; 
+            background-size: cover;
+            margin-left: 4.25px;
+        }
+            .circle25:hover
+            {
+                border: 1px solid black;
+                
+            }
+        .traiTim
+        {
+            width: 27.28px; 
+            height: 22px; 
+            margin-top: 1.5px;
+            float: left; 
+            background-size: cover;
+            background-image: url('HinhShopee/HinhTrangPhu/ChiTietSanPham/chiaSe/traiTim.png');
+        }
+            .traiTim:hover
+            {
+                opacity: 0.8;
+            }
+        select:hover
+        {
+            color:  rgb(238, 77, 45);
+        }
+        .pickButton
+        {
+            width: 79.5px;
+            height: 17px;
+            border: 0.25px solid rgb(170, 170, 170);
+            color: rgb(37, 37, 37);
+            text-align: center;
+            padding: 7.75px 0px;
+            border-radius: 2px;
+            font-size: 14px;
+            float: left;
+            margin-right: 9px;
+            cursor: pointer;
+        }
+            .pickButton:hover
+            {
+                border: 0.25px solid rgb(238, 77, 45);
+                color: rgb(238, 77, 45);
+            }
+            .pickButton:hover>img
+            {
+                z-index: 1 !important;
+            }
+    </style>
+</head>
+<body>
+    <!-- Ma script facebook developers -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" 
+            src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v9.0&appId=186081903308319&autoLogAppEvents=1" 
+            nonce="rBZwiSPq">
+    </script>
+    <!-- Ma script facebook developers cho comment-->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" 
+            src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v9.0&appId=186081903308319&autoLogAppEvents=1" 
+            nonce="N5D3k8C8">
+    </script>
+    
+    <div id="wrapper" style="background-image: none;">
+
+        <header style="position: relative;">
+            <div class="innerHeader">
+                <!-- nav ben trai-->
+                <div class="menu" style="float: left;">    
+                    <div class="nav">
+                        <a class="styleNavBenTraiPhiaTren" href="#">Kênh Người Bán</a> | 
+                    </div>
+                    <div class="nav">
+                        <a class="styleNavBenTraiPhiaTren" href="#">Tải ứng dụng</a> | 
+                    </div>
+                    <div class="nav">
+                        <a class="styleNavBenTraiPhiaTren" href="#">Kết nối</a> 
+                    </div>                             
+                </div>
+                <!-- nav ben phai-->
+                <div class="menu" style="float: right;">
+                    <div class="nav">
+                        <a class="styleNavBenPhaiPhiaTren" href="#">Thông Báo</a> 
+                    </div>
+                    <div class="nav">
+                        <a class="styleNavBenPhaiPhiaTren" href="b_troGiup.html">Trợ Giúp</a>  
+                    </div>
+                    <div class="nav">
+                        <a class="styleNavBenPhaiPhiaTren" href="b_dangKy.html">Đăng Ký</a>  |
+                    </div>   
+                    <div class="nav">
+                        <a class="styleNavBenPhaiPhiaTren" href="b_dangNhap.html">Đăng Nhập</a>  
+                    </div> 
+                </div>
+                <!-- hop tim kiem-->
+                <form>
+                    <div class="searchBox">
+                        <form style="color: black;">
+                            <input style="float: left; width:755px; height: 38px; color: rgb(35, 35, 35);
+                                        border: none; font-size: 15px; margin-left: 15px; " 
+                                   type="text" placeholder="Tết sale 27.1"/>
+
+                        </form>
+                        <button style="float:right; width: 60px; height: 34px; background-color: rgb(250, 81, 48); 
+                                    margin: 2.5px 3.5px 0px 0px; border-radius: 2px;
+                                    background-image: url('HinhShopee/HinhHeader/timKiemShopee.png'); 
+                                    background-size: 18px 18px; background-position: center center;
+                                    background-repeat: no-repeat; border: none;">
+                            <!-- vung chua icon tim kiem-->                      
+                        </button>
+                    </div>
+                </form>
+                
+                <!-- icon 2 ben-->
+                <a href="index.html">    
+                    <img src="HinhShopee/HinhHeader/shopee2.png" style="clear: both; float:left; width: 150px; height: 92px;  margin: -64px 0px 0px 10px;" />
+                </a>
+                <!-- icon  shopee-->
+                <a href="#">
+                    <img src="HinhShopee/HinhHeader/gioHangShopee.png" style="float:right; width: 33.75px; height: 34.5px; margin: -29px 64px 0px 0px;" />
+                </a>
+                <!-- icon  gio hang-->
+                
+                <!-- nav ben duoi-->
+                <div class="menu" style="position: absolute; top: 175px; margin: -82.5px 0px 0px 199px; width: 840px; float:center; padding: 0px;">
+                    <div class="nav">
+                        <a class="styleNavBenDuoi" href="#">Hoodie Nam</a> 
+                    </div>
+                    <div class="nav">
+                        <a class="styleNavBenDuoi" href="#">Sandal Nữ</a>  
+                    </div>
+                    <div class="nav">
+                        <a class="styleNavBenDuoi" href="#">Áo Nữ</a> 
+                    </div>
+                    <div class="nav">
+                        <a class="styleNavBenDuoi" href="#">Dép Nam</a>  
+                    </div>
+                    <div class="nav">
+                        <a class="styleNavBenDuoi" href="#">Balo Nữ</a> 
+                    </div>
+                    <div class="nav">
+                        <a class="styleNavBenDuoi" href="#">Quần Nam</a>  
+                    </div>
+                    <div class="nav">
+                        <a class="styleNavBenDuoi" href="#">Tất Nữ</a> 
+                    </div>
+                    <div class="nav">
+                        <a class="styleNavBenDuoi" href="#">Váy Trắng</a>  
+                    </div>
+                </div>   
+            </div>
+        <!-- cao 120px dai 100% -->
+        </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        <article style="width: 1200px; height: 2500px; background-color: none; ">
+            <!-- Khoi 1-->
+            <div  style="width: 1200px; height: 20px; background-color: none; margin-top: -131px;
+                        font-family: Helvetica,Arial; color:  rgb(55, 55, 55); font-size: 13px;">
+                <div style="height: 19px; width: 276px; float: left; margin-top: 1px;
+                            background-color: none;">
+                    Shopee > Thời Trang Nam > Áo thun > Áo nỉ >
+                </div>
+                <div style="height: 20px; width: 700px; float: left; background-color: none; font-size: 14px;">
+                    Áo Hoodie Thời Trang Size M-5XL Dành Cho Nam Vừa Với Cả Người Nặng 100kg
+                </div>            
+            </div>
+
+
+
+
+
+
+
+
+            <!-- Khoi 2-->
+            <div  style="width: 1200px; height: 750px; background-color: white; margin-top: 17px; box-shadow: 0 1px 1px  rgb(175, 175, 175);;
+                        font-family: Helvetica,Arial; color: black; font-size: 13px; " >
+                <!-- Trai-->
+                <div style="height: 700px; width: 450px; background-color: white;
+                            float: left; margin: 15px; " class="khoiTrai2">
+                    <!-- Hinh chinh-->
+                    <div style="height: 450px; width: 450px; 
+                                background-image: url('HinhShopee/HinhTrangPhu/ChiTietSanPham/all.jfif');
+                                background-size: cover;">
+                        <img src="HinhShopee/HinhTrangPhu/ChiTietSanPham/xtra.png" class="img450" />
+                    </div>
+                    <!-- Hinh phu-->
+                    <div style="height: 82px; width: 450px; background-color: none; margin-top: 8px;" >
+                        <div style="background-image: url('HinhShopee/HinhTrangPhu/ChiTietSanPham/82/all.jfif');"
+                                    class="img82">
+                            <div style="background-image: url('HinhShopee/HinhTrangPhu/ChiTietSanPham/xtra.png');"
+                                        class="img82"> 
+                                <div style=" width: 78px; height: 78px; border: 2px solid rgb(238, 77, 45); float: left; display: none;" 
+                                class="borderAn"></div>
+                            </div>
+                        </div>                                       
+                        <div style="background-image: url('HinhShopee/HinhTrangPhu/ChiTietSanPham/black.jfif');" 
+                            class="img82">
+                             <div style=" width: 78px; height: 78px; border: 2px solid rgb(238, 77, 45); float: left; display: none;" 
+                                    class="borderAn"></div>                                
+                        </div>
+                        <div style="background-image: url('HinhShopee/HinhTrangPhu/ChiTietSanPham/white.jfif');"
+                                    class="img82">
+                             <div style=" width: 78px; height: 78px; border: 2px solid rgb(238, 77, 45); float: left; display: none;" 
+                                    class="borderAn"></div>                                
+                        </div>
+                        <div style="background-image: url('HinhShopee/HinhTrangPhu/ChiTietSanPham/gray.jfif');"
+                                    class="img82">
+                             <div style=" width: 78px; height: 78px; border: 2px solid rgb(238, 77, 45); float: left; display: none;" 
+                                    class="borderAn"></div>                                
+                        </div>
+                        <div style="background-image: url('HinhShopee/HinhTrangPhu/ChiTietSanPham/khaki.jfif'); margin: 0px;"
+                                    class="img82">
+                             <div style=" width: 78px; height: 78px; border: 2px solid rgb(238, 77, 45); float: left; display: none;" 
+                                    class="borderAn"></div>                                
+                        </div>                
+                    </div>
+                    <!-- Thao tac khac-->
+                    <div style="height: 30px; width: 450px; background-color: none; margin-top: 30px;">
+                        <div style="height: 25px; width: 270px; background-color: none; float: left; border-right: 0.25px solid grey; ">
+                            <div style="float: left; margin: 2px 0px 0px 30px; font-size: 16.5px; ">Chia sẻ: </div>                             
+                            <div style="background-image: url('HinhShopee/HinhTrangPhu/ChiTietSanPham/chiaSe/mess.png');"
+                                class="circle25">                             
+                            </div>
+                            <div style="background-image: url('HinhShopee/HinhTrangPhu/ChiTietSanPham/chiaSe/face.png');"
+                                class="circle25">                             
+                            </div>
+                            <div style="background-image: url('HinhShopee/HinhTrangPhu/ChiTietSanPham/chiaSe/g+.png');"
+                                class="circle25">                             
+                            </div>
+                            <div style="background-image: url('HinhShopee/HinhTrangPhu/ChiTietSanPham/chiaSe/printerest.png');"
+                                class="circle25">                             
+                            </div>
+                            <div style="background-image: url('HinhShopee/HinhTrangPhu/ChiTietSanPham/chiaSe/twitter.png');"
+                                class="circle25">                             
+                            </div>
+                        </div>
+                        <div style="height: 25px; width: 160px; background-color: none; float: right;">
+                            <div class="traiTim">                             
+                            </div>
+                            <div style="float: left; margin: 2px 0px 0px 10px; font-size: 16.5px; ">Đã thích (574) </div>
+                        </div>
+                    </div>
+                </div> 
+                
+                
+
+
+
+                <!-- Phai-->
+                <div style="height: 650px; width: 665px; background-color: none;
+                            float: right; margin: 15px 35px 0px 0px;">
+                    <!-- Tieu de-->
+                    <div style="height: 50px; width: 665px; background-color: none; margin: 5px 0px 0px 0px;
+                                font-size: 20px; line-height: 24px;">
+                        <div style="height: 16px; width: 60px; background-color: rgb(238, 77, 45); 
+                                    text-align: center; border-radius: 2px; color: white; float: left;
+                                    font-size: 12px; padding: 1px; margin: 5px 10px 0px 0px; line-height: normal;">
+                            Yêu Thích
+                        </div>
+                        Áo Hoodie Thời Trang Size M-5XL Dành Cho Nam Vừa Với Cả Người Nặng 100kg
+                    </div>
+                    <!-- Danh gia-->
+                    <div style="height: 25px; width: 665px; background-color: none; margin: 12.25px 0px 0px 0px;
+                                font-size: 20px; line-height: 24px;">
+                        <div style="height: 25px; width: 120px; background-color: none; 
+                                     float: left; border-right: 0.25px solid rgb(175, 175, 175);">
+                            <div style="height: 23px; width: 22.5px; background-color: none; 
+                                        font-size: 17px; float: left; color: rgb(238, 77, 45);
+                                        border-bottom: 0.5px solid rgb(238, 77, 45);">
+                                4.7 
+                            </div>
+                            <div style="width: 76px; height: 17px; background-size: cover; float: left; background-position: center;
+                                        background-image: url('HinhShopee/HinhTrangPhu/ChiTietSanPham/sao.png');
+                                        margin: 3px 6px">
+                            </div>
+                        </div>
+                        <div style="height: 25px; width: 120px; background-color: none; margin-left: 14.5px; 
+                                     float: left; border-right: 0.25px solid rgb(175, 175, 175);">
+                            <div style="height: 23px; width: 28px; background-color: none; 
+                                        font-size: 17px; float: left; color: rgb(50, 50, 50);
+                                        border-bottom: 0.5px solid rgb(50, 50, 50); ">
+                                148 
+                            </div>
+                            <div style="width: 76px; height: 17px; float: left; font-size: 14px;
+                                        background-color: none; color: grey;
+                                        margin: 0px 6px">
+                                Đánh Giá
+                            </div>
+                        </div>
+                        <div style="height: 25px; width: 120px; background-color: none; margin-left: 14.5px; 
+                                     float: left; border-right: 0.25px solid rgb(175, 175, 175);">
+                            <div style="height: 23px; width: 28px; background-color: none; 
+                                        font-size: 17px; float: left; color: rgb(50, 50, 50);  ">
+                                426
+                            </div>
+                            <div style="width: 76px; height: 17px; float: left; font-size: 14px;
+                                        background-color: none; color: grey;
+                                        margin: 0px 6px">
+                                Đã Bán
+                            </div>
+                        </div>
+                    </div>   
+                    <!-- Gia-->
+                    <div style="height: 66px; width: 665px; background-color: rgb(250, 250, 250); margin: 12px 0px;">
+                        <div style="width: 67.75px; height: 9px; float: left; font-size: 17px;
+                                    background-color: none; color: grey;
+                                    border-bottom: 2px grey solid ; margin: 23px 12.25px 0px 20.75px">
+                                <u style="font-size: 11px; float: left;
+                                            margin-top: 2.5px;">
+                                    đ
+                                </u>
+                                210.000
+                        </div>
+                        <div style="width: 120px; height: 30px; float: left; font-size: 30px;
+                                    background-color: none; color: rgb(238, 77, 45);
+                                    ; margin: 14px 0px">
+                                <u style="font-size: 19.4px; float: left;
+                                            margin-top: 1.75px;">
+                                    đ
+                                </u>
+                                146.800
+                        </div>
+                        <div style="height: 14px; width: 64px; background-color: rgb(238, 77, 45); 
+                                    text-align: center; border-radius: 2px; color: white; float: left;
+                                    font-size: 12px; padding: 1px; margin: 23px 0px 0px 14.5px; 
+                                    font-weight: bold;">
+                            30% GIẢM
+                        </div>
+                    </div>     
+                    <!-- Thong tin thut vo-->
+                    <div style="height: 450px; width: 643.5px; background-color: none; margin: 10px 21.5px">
+                        <!-- 1-->
+                        <div style="height: 25px; width: 640px; background-color: none; margin: 23.25px 0px">
+                            <div style="height: 20px; width: 110px; background-color: white; float: left;
+                                        color: rgb(90, 90, 90); font-size: 14px; margin-top: 3px; ">
+                                Deal Sốc
+                            </div>
+                            <div style="height: 17px; width: 133.25px; background-color: rgb(255, 238, 232); 
+                                    text-align: center; border-radius: 2px; color: rgb(238, 77, 45); float: left;
+                                    font-size: 14px; padding: 3px 0px; margin: 0px 10px 0px 0px; ">
+                            Mua Kèm Deal Sốc
+                            </div>
+                        </div>
+                        <!-- 2-->
+                        <div style="height: 75px; width: 640px; background-color: none; margin: 23.25px 0px">
+                            <!-- 2a-->
+                            <div style="height: 20px; width: 110px; background-color: white; float: left;
+                                        color: rgb(90, 90, 90); font-size: 14px;  margin-top: 3px;">
+                                Vận Chuyển
+                            </div>
+                            <div style="height: 20px; width: 500px; background-color: white; float: left;
+                                        color: rgb(37, 37, 37); font-size: 14px;  margin-top: 3px;">
+                                <img src="HinhShopee/HinhTrangPhu/ChiTietSanPham/thongTinThutLui/xe.png"
+                                     style="width: 23px; height: 15.5px; float: left; margin-right: 5.5px;" />
+                                Miễn Phí Vận Chuyển
+                            </div>
+                            <!-- 2b-->
+                            <div style="height: 20px; width: 141.5px; background-color: white; float: left;
+                                        color: rgb(90, 90, 90); font-size: 14px; margin: 7px 0px 0px 110px;">
+                                <img src="HinhShopee/HinhTrangPhu/ChiTietSanPham/thongTinThutLui/mayBay.png"
+                                     style="width: 23px; height: 22px; float: left; margin-right: 5.5px; " />
+                                Vận Chuyển Từ
+                            </div>
+                            <div style="height: 20px; width: 105px; background-color: white; float: left;
+                                        color: rgb(37, 37, 37); font-size: 14px;  margin: 7px 0px 0px 0px;">
+                                Nước Ngoài Tới
+                            </div>
+                            <div style="height: 21px; width: 205px; background-color: white; float: left;
+                                        margin: 6px 0px 0px 0px;">
+                                <select style="border: none; font-size: 14px; color: rgb(37, 37, 37);" size="1">
+                                    <option selected>Huyện Ba Vì, Hà Nội</option>
+                                    <option>An Giang</option>
+                                    <option>Bà Rịa - Vũng Tàu</option>
+                                    <option>Bắc Cạn</option>
+                                    <option>Bắc Giang</option>
+                                    <option>Bạc Liêu</option>
+                                    <option>Bắc Ninh</option>
+                                    <option>Bến Tre</option>
+                                    <option>Bình Dương</option>
+                                    <option>Bình Định</option>
+                                </select>
+                            </div>
+                            <div style="height: 20px; width: 114px; background-color: white; float: left;
+                                        margin: 7px 0px 0px 138px; color: rgb(90, 90, 90); font-size: 14px; ">
+                                Phí Vận Chuyển
+                            </div>
+                            <div style="height: 20px; width: 300px; background-color: white; float: left;
+                                        color: rgb(37, 37, 37);  font-size: 14px;  margin: 7px 0px 0px 0px;">
+                                <u style="font-size: 9px; float: left;  margin-top: 1.5px;">
+                                đ
+                                </u>
+                                0
+                            </div>
+                                                                              
+                        </div>
+                        <!-- 3-->
+                        <div  style="height: 90px; width: 620px; background-color: none; float: left; ">
+                            <div style="height: 20px; width: 110px; background-color: white; float: left;
+                            color: rgb(90, 90, 90); font-size: 14px;  margin-top: 9px; ">
+                                Color
+                            </div>
+                            <div style="height: 90px; width: 500px; background-color: none; float: left; ">
+                                <div class="pickButton">Green
+                                    <img src="HinhShopee/HinhTrangPhu/ChiTietSanPham/green.jfif"
+                                    style="width: 450px; height: 450px; position: relative; z-index: -1;
+                                    top: -365px; left: -617.5px;"/>
+                                </div>
+                                <div class="pickButton">Black
+                                    <img src="HinhShopee/HinhTrangPhu/ChiTietSanPham/black.jfif"
+                                    style="width: 450px; height: 450px; position: relative; z-index: -1;
+                                    top: -365px; left: -707.5px;"/>
+                                </div>
+                                <div class="pickButton">Khaki
+                                    <img src="HinhShopee/HinhTrangPhu/ChiTietSanPham/khaki.jfif"
+                                    style="width: 450px; height: 450px; position: relative; z-index: -1;
+                                    top: -365px; left: -797.5px;"/>
+                                </div>
+                                <div class="pickButton">White
+                                    <img src="HinhShopee/HinhTrangPhu/ChiTietSanPham/white.jfif"
+                                    style="width: 450px; height: 450px; position: relative; z-index: -1;
+                                    top: -365px; left: -887.5px;"/>
+                                </div>
+                                <div class="pickButton">Gray
+                                    <img src="HinhShopee/HinhTrangPhu/ChiTietSanPham/gray.jfif"
+                                    style="width: 450px; height: 450px; position: relative; z-index: -1;
+                                    top: -365px; left: -977.75px;"/>
+                                </div>
+                                <div class="pickButton" style="margin-top: 9px;">Red
+                                    <img src="HinhShopee/HinhTrangPhu/ChiTietSanPham/red.jfif"
+                                    style="width: 450px; height: 450px; position: relative; z-index: -1;
+                                    top: -408px; left: -617.5px;"/></div>
+                            </div>      
+                        </div>
+                        
+                        <!-- 4-->
+                        <div  style="height: 90px; width: 620px; background-color: none; float: left; ">
+                            <div style="height: 20px; width: 110px; background-color: white; float: left;
+                                        color: rgb(90, 90, 90); font-size: 14px;  margin-top: 12px; ">
+                                Size
+                            </div>
+                            <div style="height: 90px; width: 500px; background-color: none; float: left;
+                                        margin-top: 3px;">
+                                <div class="pickButton">5XL</div>
+                                <div class="pickButton">4XL</div>
+                                <div class="pickButton">XL</div>
+                                <div class="pickButton">M</div>
+                                <div class="pickButton">L</div>
+                                <div class="pickButton" style="margin-top: 9px;">2XL</div>
+                                <div class="pickButton" style="margin-top: 9px;">3XL</div>
+                            </div>        
+                        </div>
+                        
+                        <!-- 5-->
+                        <div style="height: 32px; width: 640px; background-color: none; float: left; 
+                                    margin-top: 23px;">
+                            <div style="height: 20px; width: 110px; background-color: white; float: left;
+                                        color: rgb(90, 90, 90); font-size: 14px; margin-top: 5px; ">
+                                Số Lượng
+                            </div>
+                            <div style="height: 32px; width: 114px;  float: left;">
+                                <button style="height: 31.5px; width: 31.5px; float: left; background-color: white;
+                                            border: 0.25px solid rgb(170, 170, 170); font-size: 20px; 
+                                            color: rgb(37, 37, 37); border-top-right-radius: 0px;
+                                            border-bottom-right-radius: 0px;" >
+                                    -
+                                </button> 
+                                <div style="height: 24px; width: 45px; float: left; background-color: white;
+                                            border-top: 0.25px solid rgb(170, 170, 170); font-size: 20px; 
+                                            border-bottom: 0.25px solid rgb(170, 170, 170);
+                                            color: rgb(37, 37, 37); text-align: center; padding: 3px;" >
+                                    1
+                                </div>
+                                <button style="height: 31.5px; width: 31.5px; float: left; background-color: white;
+                                            border: 0.25px solid rgb(170, 170, 170); font-size: 20px; 
+                                            color: rgb(37, 37, 37); border-top-left-radius: 0px;
+                                            border-bottom-left-radius: 0px;" >
+                                    +
+                                </button>                               
+                            </div>
+                            <div style="height: 20px; width: 300px; background-color: white; float: left;
+                                        color: rgb(90, 90, 90); font-size: 14px; margin: 5px 14px; ">
+                                5474 sản phẩm có sẵn
+                            </div>
+                        </div> 
+                        <!-- 6-->
+                        <div style="height: 50px; width: 640px; background-color: none; margin: 15px 0px;
+                                    float: left;">
+                            <button style="height: 46px; width: 178px; background-color: rgb(255, 238, 232); 
+                                             border-radius: 2px; float: left;
+                                            padding: 3px 0px; margin: 0px 10px 0px 0px; 
+                                            border: 1px solid rgb(238, 77, 45)">
+                                <img src="HinhShopee/HinhTrangPhu/ChiTietSanPham/thongTinThutLui/gioHang+.png"
+                                    style="width: 23px; height: 23px; float: left; margin-left: 10px;"/>
+                                <div style=" height: 20px; width: 130px;
+                                            text-align: center; color: rgb(238, 77, 45); float: left;
+                                            font-size: 14px; margin: 3px 10px 0px 0px; ">
+                                    Thêm Vào Giỏ Hàng
+                                </div>
+                                
+                            </button> 
+                            <button style="height: 46px; width: 178px; background-color:  rgb(238, 77, 45); 
+                                            border-radius: 2px; float: left;
+                                            padding: 3px 0px; margin: 0px 10px 0px 0px; 
+                                            border: 1px solid rgb(238, 77, 45)">
+                                <div style=" height: 20px; width: 130px;
+                                            text-align: center; color: white; float: left;
+                                            font-size: 14px; margin: 3px 0px 0px 23px; ">
+                                    Mua Ngay
+                                </div>                              
+                            </button>                            
+                        </div>                                             
+                    </div> 
+                    <!-- Danh gia-->
+                    <div style="height: 50px; width: 665px; background-color: none; margin-top: 23.5px;
+                                font-size: 20px; line-height: 24px; border-top: 1px solid rgb(170, 170, 170);">
+                        <div style="height: 20px; width: 140px; background-color: none; float: left;
+                        color: rgb(37, 37, 37); font-size: 14px; margin: 25px 11.5px 0px 20.5px; ">
+                            <img src="HinhShopee/HinhTrangPhu/ChiTietSanPham/thongTinThutLui/khienShopee.png"
+                                style="width: 20px; height: 20px; float: left;" />
+                            <div style="height: 20px; width: 115px; background-color: none; float: left;
+                            color: rgb(37, 37, 37); font-size: 14px; margin: -2px 0px 0px 5px; ">                               
+                               Shopee đảm bảo
+                            </div>
+                           
+                        </div>
+                        <div style="height: 20px; width: 300px; background-color: none; float: left;
+                        color: rgb(90, 90, 90); font-size: 14px; margin: 23px 0px; ">
+                            3 Ngày Trả Hàng/Hoàn Tiền
+                        </div>
+                    </div>
+            </div>
+            
+
+
+
+
+
+
+
+            <!-- Khoi 3-->
+            <div style="height: 130px; width: 1200px; float: left; background-color: white; 
+                        margin-top: 41px; box-shadow: 0 1px 1px  rgb(175, 175, 175);;
+                        font-family: Helvetica,Arial; color: black; font-size: 15.5px; " >  
+                <!-- Trai-->     
+                <div style="height: 130px; width: 440px; float: left; background-color: none; " >  
+                    <div style="height: 130px; width: 130px; float: left; background-color: none; " >  
+                        <div style="height: 80px; width: 80px; float: center;
+                                    border-radius: 40px; background-size: cover; margin-top: 25px;
+                                    background-image: url('HinhShopee/HinhTrangPhu/ChiTietSanPham/thongTinCuaHang/logo.jfif');" >                             
+                        </div>
+                        <div style="height: 16px; width: 60px; background-color: rgb(238, 77, 45); 
+                            text-align: center; border-radius: 2px; color: white; 
+                            font-size: 12px; padding: 1px; margin: -18px 0px 0px 35px; line-height: normal;">
+                            Yêu Thích
+                        </div>
+                    </div>
+                    <div style="height: 130px; width: 270px; float: left; background-color: none; " >  
+                        <div style="height: 20px; width: 220px; float: left; background-color: none;
+                                    font-size: 15.5; color: rgb(37, 37, 37); margin-top: 25px;" >  
+                            yichen98715.vn
+                        </div>
+                        <div style="height: 20px; width: 220px; float: left; background-color: none;
+                                    font-size: 14px; color: rgb(90, 90, 90); margin-top: 0.5px;" >  
+                            Online 3 Giờ Trước
+                        </div>
+                        <div style="height: 40px; width: 250px; float: left; background-color: none;
+                                     margin-top: 6px;" >  
+                            <button style="height: 34px; width: 117px; float: left; background-color: rgb(255, 238, 232);
+                                        border-radius: 2px; border: 1px solid rgb(238, 77, 45); color: rgb(238, 77, 45);" >  
+                                <img src="HinhShopee/HinhTrangPhu/ChiTietSanPham/thongTinCuaHang/chatNgay.png"
+                                    style="width: 18px; height: 17px; float: left; margin: 0px -7px 0px 7.75px; " />
+                                Chat Ngay
+                            </button>
+                            <button style="height: 34px; width: 117px; float: left; background-color: white; color: rgb(86, 86, 86);
+                                        margin-left: 11px; border-radius: 2px; border: 1px solid rgb(170, 170, 170);" >  
+                                <img src="HinhShopee/HinhTrangPhu/ChiTietSanPham/thongTinCuaHang/xemShop.png"
+                                    style="width: 16.5px; height: 15px; float: left; margin: 0px -7px 0px 7.75px; " />
+                                Xem Shop
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Nut like -->
+                    <div class="fb-like" 
+                        data-href="https://developers.facebook.com/docs/plugins/" 
+                        data-width="" 
+                        data-layout="button" 
+                        data-action="like" 
+                        data-size="small" 
+                        data-share="true"
+                        style="float: right; position: relative; top: -91px; left: -65px;">
+                    </div>
+                </div>  
+
+                <!-- Phai-->
+                <div style="height: 52.5px; width: 600px; float: right; background-color: none; 
+                            margin-top: 25px; border-left: 1px solid rgb(170, 170, 170); padding: 13.75px 55px;" >  
+                    <div style="height: 20px; width: 150px; float: left; background-color: none;
+                                font-size: 14px; color: rgb(90, 90, 90);" >  
+                            <div style="height: 20px; width: fit-content; float: left; background-color: none;
+                            font-size: 14px; color: rgb(90, 90, 90);" >  
+                                Đánh Giá                     
+                            </div>
+                            <div style="height: 20px; width: fit-content; float: left; background-color: none;
+                            font-size: 14px; color: rgb(238, 77, 45); margin-left: 10.25px;" >  
+                                411                             
+                            </div>                   
+                    </div>
+                    <div style="height: 20px; width: 269px; float: left; background-color: none;
+                                    font-size: 14px; color: rgb(90, 90, 90);" >  
+                            <div style="height: 20px; width: fit-content; float: left; background-color: none;
+                            font-size: 14px; color: rgb(90, 90, 90);" >  
+                                Tỉ Lệ Phản Hồi                    
+                            </div>
+                            <div style="height: 20px; width: fit-content; float: left; background-color: none;
+                            font-size: 14px; color: rgb(238, 77, 45); margin-left: 10.25px;" >  
+                                98%                             
+                            </div>                   
+                    </div>
+                    <div style="height: 20px; width: 160px; float: left; background-color: none;
+                                font-size: 14px; color: rgb(90, 90, 90);" >  
+                            <div style="height: 20px; width: fit-content; float: left; background-color: none;
+                            font-size: 14px; color: rgb(90, 90, 90);" >  
+                                Tham Gia                    
+                            </div>
+                            <div style="height: 20px; width: fit-content; float: left; background-color: none;
+                            font-size: 14px; color: rgb(238, 77, 45); margin-left: 10.25px;" >  
+                                4 tháng trước                              
+                            </div>                   
+                    </div>
+                    <div style="height: 20px; width: 150px; float: left; background-color: none;
+                                font-size: 14px; color: rgb(90, 90, 90); margin-top: 17px;" >  
+                            <div style="height: 20px; width: fit-content; float: left; background-color: none;
+                            font-size: 14px; color: rgb(90, 90, 90);" >  
+                                Sản Phẩm                     
+                            </div>
+                            <div style="height: 20px; width: fit-content; float: left; background-color: none;
+                            font-size: 14px; color: rgb(238, 77, 45); margin-left: 10.25px;" >  
+                                198                             
+                            </div>                   
+                    </div>
+                    <div style="height: 20px; width: 269px; float: left; background-color: none;
+                                    font-size: 14px; color: rgb(90, 90, 90); margin-top: 17px;" >  
+                            <div style="height: 20px; width: fit-content; float: left; background-color: none;
+                            font-size: 14px; color: rgb(90, 90, 90);" >  
+                                Thời Gian Phản Hồi                   
+                            </div>
+                            <div style="height: 20px; width: fit-content; float: left; background-color: none;
+                            font-size: 14px; color: rgb(238, 77, 45); margin-left: 10.25px;" >  
+                                trong vài phút                             
+                            </div>                   
+                    </div>
+                    <div style="height: 20px; width: 160px; float: left; background-color: none;
+                                font-size: 14px; color: rgb(90, 90, 90); margin-top: 17px;" >  
+                            <div style="height: 20px; width: fit-content; float: left; background-color: none;
+                            font-size: 14px; color: rgb(90, 90, 90);" >  
+                                Người Theo Dõi                    
+                            </div>
+                            <div style="height: 20px; width: fit-content; float: left; background-color: none;
+                            font-size: 14px; color: rgb(238, 77, 45); margin-left: 10.25px;" >  
+                                1,3k                              
+                            </div>                   
+                    </div>
+                </div> 
+            <!-- Khoi 4-->
+            <div style="height: 1350px; width: 1200px; float: left; background-color: white; 
+            margin-top: 20px; box-shadow: 0 1px 1px  rgb(175, 175, 175);;
+            font-family: Helvetica,Arial; " >  
+                <div style="height: 19.75px; width: 1120px;  background-color: rgb(250, 250, 250); 
+                margin-top: 25px; padding: 15px; font-size: 18px; color: rgb(37, 37, 37);" > 
+                    CHI TIẾT SẢN PHẨM
+                </div>
+                <div style="height: 176px; width: 1120px;  background-color: none; 
+                margin-top: 25px; padding: 15px;" > 
+                    <div style="height: 20px; width: 850px; float: left; background-color: none;
+                                margin-top: 15px;" >  
+                            <div style="height: 20px; width: 130px; float: left; background-color: none;
+                            font-size: 14px; color: rgb(90, 90, 90);" >  
+                                Danh Mục                     
+                            </div>
+                            <div style="height: 20px; width: fit-content; float: left; background-color: none;
+                            font-size: 14px; color: rgb(37, 37, 37); margin-left: 10.25px;" >  
+                                <div style="color: rgb(23, 59, 145); float: left; margin-right: 6px;">Shopee</div>
+                                <div style="float: left; margin-right: 6px;">></div>
+                                <div style="color: rgb(23, 59, 145); float: left;  margin-right: 6px;">Thời Trang Nam</div>                               
+                                <div style="float: left; margin-right: 6px;">></div>
+                                <div style="color: rgb(23, 59, 145); float: left; margin-right: 6px;">Áo thun</div>                              
+                                <div style="float: left; margin-right: 6px;">></div>
+                                <div style="color: rgb(23, 59, 145); float: left;">Áo nỉ</div>                                                                                          
+                            </div>                                                   
+                    </div>
+                    <div style="height: 20px; width: 850px; float: left; background-color: none;
+                                margin-top: 15px;" >  
+                        <div style="height: 20px; width: 130px; float: left; background-color: none;
+                        font-size: 14px; color: rgb(90, 90, 90);" >  
+                            Thương hiệu                    
+                        </div>
+                        <div style="height: 20px; width: fit-content; float: left; background-color: none;
+                        font-size: 14px; color: rgb(23, 59, 145); margin-left: 10.25px;" >  
+                            No Brand                                                                                    
+                        </div>                                       
+                    </div>
+                    <div style="height: 20px; width: 850px; float: left; background-color: none;
+                                margin-top: 15px;" >  
+                        <div style="height: 20px; width: 130px; float: left; background-color: none;
+                        font-size: 14px; color: rgb(90, 90, 90);" >  
+                            Chất liệu                   
+                        </div>
+                        <div style="height: 20px; width: fit-content; float: left; background-color: none;
+                        font-size: 14px; color: rgb(37, 37, 37); margin-left: 10.25px;" >  
+                            Cotton                                                                                    
+                        </div>                                       
+                    </div>
+                    <div style="height: 20px; width: 850px; float: left; background-color: none;
+                                margin-top: 15px;" >  
+                        <div style="height: 20px; width: 130px; float: left; background-color: none;
+                        font-size: 14px; color: rgb(90, 90, 90);" >  
+                            Xuất Xứ                   
+                        </div>
+                        <div style="height: 20px; width: fit-content; float: left; background-color: none;
+                        font-size: 14px; color: rgb(37, 37, 37); margin-left: 10.25px;" >  
+                            Trung Quốc                                                                                  
+                        </div>                                       
+                    </div>
+                    <div style="height: 20px; width: 850px; float: left; background-color: none;
+                                margin-top: 15px;" >  
+                        <div style="height: 20px; width: 130px; float: left; background-color: none;
+                        font-size: 14px; color: rgb(90, 90, 90);" >  
+                            Kho hàng                   
+                        </div>
+                        <div style="height: 20px; width: fit-content; float: left; background-color: none;
+                        font-size: 14px; color: rgb(37, 37, 37); margin-left: 10.25px;" >  
+                            5470                                                                                  
+                        </div>                                       
+                    </div>                   
+                </div>
+                <div style="height: 19.75px; width: 1120px;  background-color: rgb(250, 250, 250); 
+                margin-top: 15px; padding: 15px; font-size: 18px; color: rgb(37, 37, 37);" > 
+                    MÔ TẢ SẢN PHẨM
+                </div>
+                <div style="height: 918px; width: 1120px;  background-color: none; color: rgb(37, 37, 37);
+                            margin-top: 25px; padding: 15px; font-size: 14px; line-height: 2.1;" >
+                    Thời gian giao hàng dự kiến cho sản phẩm này là từ 7-9 ngày<br>
+                    <br>
+                    ⚡Cửa hàng chính hãng Y-C, tập trung vào các dòng quần áo thời trang, dựa vào khả năng thiết kế của riêng mình và nguồn lực của nhà máy, được khách hàng vô cùng yêu thích<br>
+                    ~~<br>
+                    ⚡ Cửa hàng chính hãng Y-C, mang màu sắc của thế giới_ đến với bạn, dịch vụ trước và sau bán hàng hoàn hảo, hãy để mọi người biết đến ⚡Y-C đều có cảm xúc và lợi ích ~~<br>
+                    ⚡Cửa hàng chính hãng Y-C, chúng tôi có một đội ngũ sản xuất và đổi mới rất đoàn kết với nhau. Mọi người trong đội đều vững vàng, kiên trì, đam mê và tận tâm ~~<br>
+                    <br>
+                    🔥 "Vì vẻ đẹp của thế giới" - Cửa hàng chính hãng Y-C<br>
+                    <br>
+                    <br>
+                    🔥Lưu ý khi mua hàng: 🔥<br>
+                    1. Để biết chi tiết kích thước, vui lòng tham khảo hình ảnh cuối hoặc bảng kích thước trong hình ảnh. Kích thước tổng thể của phần phía dưới sản phẩm cửa hàng này là loại dáng<br>
+                    rộng, và phần trên thì là kiểu mỏng và dáng rộng. Nếu bạn không chắc mình mặc size bao nhiêu, bạn có thể trao đổi và cung cấp cho chúng tôi chiều cao và cân nặng của bạn,<br> 
+                    chúng tôi sẽ tư vấn kích thước phù hợp cho bạn<br>
+                    <br>
+                    2. Tất cả các sản phẩm được vận chuyển từ đại lục. Sau khi chúng tôi gửi hàng đi, hệ thống sẽ không hiển thị là hàng đã được chuyển đi ngay lập tức vì hậu cần sẽ không hiển thị<br> 
+                    cho đến khi nhân viên đến trung tâm trung chuyển quốc tế và hoàn tất đăng ký và giao hàng, các bạn hãy kiên nhẫn chờ đợi nhé ~~<br>
+                    <br>
+                    3. Đối với tất cả các loại quần jean là hàng mới sản xuất tại Trung Quốc đại lục, các bạn cứ yên tâm sử dụng nếu không quần không được cắt sẵn lỗ gài khuy. Đó không phải là do<br> 
+                    sản phẩm bị lỗi chưa hoàn thiện, mà để đảm bảo tính toàn vẹn của sản phẩm ở mức độ cao nhất ~ ~ Lưu ý: quần jean ở Trung Quốc đại lục không được cắt lỗ cài khuy ở vùng<br> 
+                    lưng quần, những chiếc quần đó là sản phẩm mới]]<br>
+                    <br>
+                    4. Cửa hàng có kiểm tra sản phẩm trước khi xuất hàng, nhưng thỉnh thoảng sẽ có thiếu sót. Nếu có sai sót gì như giao hàng thiếu, bị vấn đề chất lượng, vv, thì sau khi nhận hàng<br> 
+                    xin bạn vui lòng liên hệ với chúng tôi ngay khi có thể để giải quyết, chúng tôi rất chân thành và có trách nhiệm ~~<br>
+                    <br>
+                    5. Nếu bạn hài lòng với sản phẩm và dịch vụ của chúng tôi, xin hãy cho chúng tôi lời khen năm sao. Cảm ơn các bạn đã ủng hộ và chúc các bạn sống vui vẻ ~~<br>
+                    Thiết kế: Áo mỏng thông thường<br>
+                    Thiết kế lai áo: Lai thẳng<br>
+                    Kiểu xẻ tà sau: Không xẻ tà<br>
+                    <br>
+                    <br>
+                    # boys' clothes# spot# Cash on Delivery# cool# fashion# vintage# slim# Korean version# handsome# casual all-match# hole# suit# Coat# dress# gift# Casual# tannin coat   
+                </div>
+            </div>   
+            <!-- Khoi 5-->
+            <div style="height: fit-content; width: 1200px; float: left; background-color: white; 
+            margin-top: 20px; box-shadow: 0 1px 1px  rgb(175, 175, 175);;
+            font-family: Helvetica,Arial; " >  
+                <!-- Comment -->
+                <div class="fb-comments" 
+                    data-href="http://127.0.0.1:5500/ps18817_AssignmentGDx_TranCaoMinh/c_chiTietSanPham%20copy.html" 
+                    data-width="1200" 
+                    data-numposts="5">
+                </div>
+            </div>       
+        </article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <footer>
+            
+            <div class="footer3">
+                <div class="divTheoHangFooter3">
+                    <div class="navFooter3">
+                        <a href="d_chinhSachBaoMat.html">CHÍNH SÁCH BẢO MẬT</a>
+                    </div>
+                    <div class="navFooter3">
+                        <a href="d_quyCheHoatDong.html">QUY CHẾ HOẠT ĐỘNG</a>
+                    </div>
+                    <div class="navFooter3">
+                        <a href="d_chinhSachVanChuyen.html">CHÍNH SÁCH VẬN CHUYỂN</a>
+                    </div>
+                    <div class="navFooter3" style="border: none;">
+                        <a href="d_traHangHoanTien.html">CHÍNH SÁCH TRẢ HÀNG VÀ HOÀN TIỀN</a>
+                    </div>
+                </div>
+
+                <div class="divTheoHangFooter3">
+                    <div class="imageFooter3">
+                        <img src="HinhShopee/HinhFooter/footer3/boCongThuong.png" width="125px" height="47.25px" />
+                    </div>
+                    <div class="imageFooter3">
+                        <img src="HinhShopee/HinhFooter/footer3/boCongThuong.png" width="125px" height="47.25px" />
+                    </div>
+                    <div class="imageFooter3">
+                        <img src="HinhShopee/HinhFooter/footer3/vanTay.png" width="50px" height="47.25px" />
+                    </div>
+                </div>
+
+                <div class="divTheoHangFooter3">
+                    <p style="color: rgb(86, 86, 86);">Công ty TNHH Shopee</p>
+                </div>
+
+                <div class="divTheoHangFooter3" style="margin-top: 25px;">
+                    <p>Địa chỉ: Tầng 28, Tòa nhà trung tâm Lotte Hà Nội, 54 Liễu Giai, phường Cống Vị, Quận Ba Đình, Hà Nội. Tổng đài hỗ trợ: 19001221 - Email: cskh@hotro.shopee.vn</p>
+                </div>
+                <div class="divTheoHangFooter3" style="margin-top: 10px;">
+                    <p>Mã số doanh nghiệp: 0106773786 do Sở Kế hoạch & Đầu tư TP Hà Nội cấp lần đầu ngày 10/02/2015</p>
+                </div>
+                <div class="divTheoHangFooter3" style="margin-top: 10px;">
+                    <p>© 2015 - Bản quyền thuộc về Công ty TNHH Shopee</p>
+                </div>              
+            </div>
+        </footer>
+    
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,283 @@
+/* HEADER mac dinh cho pc*/
+header
+{
+    width: 100%; /* 1536px */ 
+    height: 120px;
+    background-image: linear-gradient(rgb(245,60,45),rgb(255, 105,55));
+    position: fixed;
+    z-index: 2;     /* cap do len tren 2*/
+}
+    .inHeader
+    {
+        max-width: 1200px;
+        height: 100%; 
+        float: center;
+    }
+        .inHeader__container-iconGioHang
+        {
+            float:right; 
+            width: 8%; /* 96px */ 
+            height: 34.5px; 
+            margin: -29px 0px 0px 0px;
+            background-color: none;
+            position: relative;
+        }
+        .inHeader__container-logoShopee
+        {
+            clear: both; 
+            float:left;
+            background-color: none;
+            width: 165px; 
+            height: 50px;
+            margin-top: -44px;
+        }
+            .inHeader__logoShopee
+            {
+                width: 165px; 
+                height: 50px;  
+            }
+        .inHeader__searchBox
+        {        
+            clear: both;
+            width: 70%; /* 840px */ 
+            height: 40px; 
+            background-color: rgb(255, 255, 255);
+            margin-left: 203px;
+            border-radius: 2px;
+            color: black;
+            position: relative;
+        }
+            .inHeader__searchBox-input
+            {
+                width: 94%; /* 755px */ 
+                height: 38px; 
+                color: rgb(35, 35, 35);                         
+                margin-left: 15px; 
+                font-size: 15px; 
+                border: none;
+            }
+            .inHeader__searchBox-button
+            {
+                width: 60px; /* 60px */ 
+                height: 34px; 
+                background-color: rgb(250, 81, 48); 
+                border-radius: 2px;
+                border: none;
+                position: absolute;
+                top: 2.5px;
+                right: 3.5px;
+                cursor: pointer;
+                opacity: 1 !important;
+            }
+        .inHeader__menu-trai-tren
+        {
+            width: fit-content;
+            height: 20px;
+            color: white;
+            background-color: none;
+            margin: 7px 0px 21px 3px;
+            letter-spacing: 0.25px;
+            float: left;
+        }
+        .inHeader__menu-phai-tren
+        {
+            width: fit-content;
+            height: 20px;
+            color: white;
+            background-color: none;
+            margin: 7px 3px 21px 0px;
+            letter-spacing: 0.25px;
+            float: right;
+        }
+        .inHeader__menu-giua-duoi
+        {
+            width: fit-content;
+            height: 20px;
+            color: white;
+            background-color: none;
+            letter-spacing: 0.25px;
+            margin-top: 3px; 
+            margin-left: 199px;  
+        }
+            .inHeader__menu-nav
+            {
+                width: fit-content;
+                height: 20px;
+                margin-left: 4px;
+                float: left;
+                font-family: Helvetica Neue,Helvetica,Arial;
+            }
+                .styleNav_Phai-Tren
+                {
+                    margin-right: 10px;      
+                    color: white;
+                    text-decoration: none;
+                    font-size: 12.5px;
+                }
+                .styleNav_Trai-Tren
+                {
+                    color: white;
+                    text-decoration: none;
+                    font-size: 12.5px;
+                }
+                .styleNav_Giua-Duoi
+                {
+                    font-size: 11.5px;
+                    margin-right: 2px;
+                    color: white;
+                    text-decoration: none;
+                }
+header a:hover
+{
+    color: black;
+    opacity: 0.5;
+}
+header input:focus
+{
+    border: none;
+    outline: none;
+}
+
+/* Cac css can de tao menu pro cho responsive web :D*/
+.overlay
+{
+    position: fixed;
+    top: 0; /* top bottom left right 0 de phu kin man hinh khi menu hien ra*/
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.25); /* mau sac khi phu kin man hinh*/
+    display: none; /* cho pc */ 
+}
+.nav-bars
+{
+    width: 30px;
+    height: 30px;
+    color: white;
+    position: absolute;
+    top: 31%;
+    right: 3%;
+    display: none;
+}
+.nav 
+{
+    position: fixed;
+    top: 0; /* top bottom right 0 de menu hien ra ben goc phai*/
+    bottom: 0;
+    right: 0;
+    width: 100%; /* tao them width 100% de co the dieu chinh theo width*/ 
+    max-width: 270px;
+    background-color: white;
+    display: none; /* cho pc */ 
+}
+    .nav > img
+    {
+        float: left;
+        width: 125px;
+        height: auto;
+        margin: 10px;
+    }
+    .nav-close
+    {
+        width: 30px;
+        height: 30px;
+        color: rgb(250, 81, 48);
+        float: right;
+        margin: 10px;
+    }
+    .nav-list
+    {
+        margin-top: 50px;
+        margin-left: -12px;
+        list-style-type: none;
+        clear: both;
+    }
+        .styleNav-list
+        {
+            text-decoration: none;
+            color:rgb(35, 35, 35);
+            display: block; /* de co them thuoc tinh padding gian cach*/
+            padding: 8px 0px;
+            font-size: 25px;
+        }
+.nav-menu-input:checked ~ .overlay /* dung lop gia checked de khi nhan lam cac cai can hien len*/
+{
+    display: block;
+}
+.nav-menu-input:checked ~ .nav /* dung lop gia checked de khi nhan lam cac cai can hien len*/
+{
+    display: block;
+}
+
+/* Header thich ung khi 740px <width< 1023.5px cho tablet*/
+@media only screen and (min-width: 740px) and (max-width: 1023.5px)
+{
+    header
+    {
+        position: relative;
+        padding-top: 23px;
+        padding-bottom: 3%;
+        height: 40px;
+        background-image: none;
+    }
+        .inHeader__searchBox
+        {    
+            margin-left: 20px;
+            width: 89%;
+        }
+        .inHeader__container-logoShopee,
+        .inHeader__menu-phai-tren,
+        .inHeader__menu-trai-tren,
+        .inHeader__menu-giua-duoi,
+        .inHeader__container-iconGioHang
+        {
+            display: none;
+        }
+        .nav-bars
+        {
+            top: 26px;
+            display: block;
+        }
+}
+
+/* Header thich ung khi width< 739.5px cho mobile 320*/
+@media only screen and (max-width: 739.5px)
+{
+    header
+    {
+        position: relative;
+        padding-top: 15px;
+        height: 40px;
+        background-image: none;
+        background-color: rgb(200, 0, 26);
+    }
+        .inHeader__container-logoShopee,
+        .inHeader__menu-phai-tren,
+        .inHeader__menu-trai-tren,
+        .inHeader__menu-giua-duoi,
+        .inHeader__container-iconGioHang
+        {
+            display: none;
+        }
+        .nav-bars
+        {
+            top: 18px;
+            display: block;
+        }
+        .inHeader__searchBox
+        {   
+            float: left;   
+            margin-left: 2%;
+            margin-right: 2%;
+            width: 82%;
+        }
+            .inHeader__searchBox-input
+            {
+                width: 89%;
+            }
+            .inHeader__searchBox-button
+            {
+                width: 45px;
+                opacity: 0.95 !important;
+            }
+}

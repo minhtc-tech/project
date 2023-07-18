@@ -1,0 +1,181 @@
+/* FOOTER mac dinh cho pc */
+footer
+{
+    border-top: 4px solid rgb(238, 77, 45);
+}
+    .footer1
+    {
+        max-width: 1200px;
+        height: fit-content;
+        padding: 65px 0px;
+        float: center;
+        background-color: white; /* white */
+        color: grey;
+        font-family: Helvetica Neue,Helvetica,Arial;
+        font-size: 12px;
+        line-height: 1.4;
+        text-align: justify;
+    }
+    /*.footer2
+    {
+        width: 100%;
+        /* height: 524px;*|
+        height: fit-content;
+        background-color: rgb(251, 251, 251);
+    }*/   
+    .footer3
+    {
+        width: 100%;
+        height: 220px; /* 288px */
+        background-color: rgb(245, 245, 245);
+        padding: 40px 0px;
+        position: relative;
+    }
+        .divTheoHangFooter3,.containCongTyTNHH-Shopee
+        {
+            float: center; 
+            width: fit-content; 
+            height: fit-content;
+        }
+        .contain-navFooter3
+        {
+            float: center; 
+            width: 868.3px; 
+            height: 20px;
+            background-color: none;
+        }
+            .navFooter3
+            {
+                width: fit-content;
+                height: 20px; 
+                float: left;
+                padding: 0px 25px;
+                border-right: 1px solid grey;
+                background-color: none;
+            }
+            .imageFooter3
+            {
+                width: fit-content;
+                height: fit-content; 
+                float: left;
+                padding: 40px 25px 10px 25px;
+            }
+                .imageFooter3-boCongThuong
+                {
+                    width: 125px;
+                    height: 47.25px;
+                }
+                .imageFooter3-vanTay
+                {
+                    width: 50px;
+                    height: 47.25px;
+                }
+            .navFooter3 a
+            {
+                font-family: Helvetica Neue,Helvetica,Arial;
+                text-decoration: none;
+                color: grey;
+                font-size: 12.25px;
+            }       
+            .footer3 div p
+            {
+                font-family: Helvetica Neue,Helvetica,Arial;
+                font-size: 11.75px;
+                color: grey;
+            }
+.navFooter3 a:hover
+{
+    color: orangered;
+}
+
+/* Footer thich ung khi 740px <width< 1023.5px cho tablet*/
+@media only screen and (min-width: 740px) and (max-width: 1023.5px)
+{
+    .footer1
+    {
+        display: none;
+    }
+    .footer3
+    {
+        height: 200px; 
+    }
+        .contain-navFooter3
+        {
+            width: 100%; 
+            height: 50px;
+            margin-top: -25px;
+        } 
+        .thichUngNotPc-navFooter3
+        {
+            width: 50%;
+            height: 25px;
+            float: left;
+        }
+            .navFooter3
+            {
+                width: 100%;
+                height: fit-content; 
+                text-align: center;
+                padding: 0px;
+            }
+            .imageFooter3
+            {
+                padding: 10px 25px;
+            }
+}
+
+/* Footer thich ung khi width< 739.5px cho mobile*/
+@media only screen and (max-width: 739.5px)
+{
+    .footer1
+    {
+        display: none;
+    }
+    .footer3
+    {
+        height: 190px; 
+    }
+        .divTheoHangFooter3
+        {
+            height: fit-content;
+            text-align: center;
+            font-size: 8.5px;
+        }
+        .contain-navFooter3
+        {
+            width: 100%; 
+            height: 50px;
+            margin-top: -25px;
+        } 
+        .thichUngNotPc-navFooter3
+        {
+            width: 50%;
+            height: 25px;
+            float: left;
+        }
+            .navFooter3
+            {
+                width: 100%;
+                height: fit-content; 
+                text-align: center;
+                padding: 0px;
+            }
+                .navFooter3 a 
+                {
+                   font-size: 8.425px; 
+                }
+            .imageFooter3
+            {
+                padding: 5px 3px;
+            }
+                .imageFooter3-boCongThuong
+                {
+                    width: 100px; /* 125/47.25*/
+                    height: 37.8px;
+                }
+                .imageFooter3-vanTay
+                {
+                    width: 40px; /* 50/47.25*/
+                    height: 37.8px;
+                }
+}

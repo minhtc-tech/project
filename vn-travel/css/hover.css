@@ -1,0 +1,8 @@
+.link-hover:hover {
+  background-color: rgba(13, 110, 253, 0.05) !important;
+  color: #0C4271 !important;
+}
+
+.hover-full-opacity:hover {
+  opacity: 1 !important;
+}
